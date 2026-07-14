@@ -131,7 +131,14 @@ app.post("/add",async(request,response)=>{
 
 
 
+app.post("/view",async(request,response)=>{
 
+const ev=await Ev.find()       //to get all course and keep in courses
+
+
+    response.send(ev)
+
+})
 
 
 
